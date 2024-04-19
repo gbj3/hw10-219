@@ -98,3 +98,9 @@ def test_user_base_username_length_too_short(user_base_data):
     user_base_data["username"] = "abc"
     user = UserBase(**user_base_data)
     assert user.username == "abc"
+
+# Test username with invalid special characters
+def test_user_base_user_invalid_char(user_base_data):
+    user_base_data["username"] = "@()/\!"
+    with pytest.raises(ValidationError):
+        UserBase(**user_base_data)

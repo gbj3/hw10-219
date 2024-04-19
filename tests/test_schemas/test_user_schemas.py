@@ -100,7 +100,17 @@ def test_user_base_username_length_too_short(user_base_data):
     assert user.username == "abc"
 
 # Test username with invalid special characters
-def test_user_base_user_invalid_char(user_base_data):
+def test_user_base_username_invalid_char(user_base_data):
     user_base_data["username"] = "@()/\!"
     with pytest.raises(ValidationError):
         UserBase(**user_base_data)
+
+def test_user_base_password_edge_cases(user_create_data):
+    user_create_data["password"] = "abcdefg"
+    with pytest.raises(ValidationError):
+        UserCreate(**user_create_data)
+    
+    # Test password with length equal to 8 characters but no special character
+    user_create_data["password"] = "Abcdefg1"
+    with pytest.raises(ValidationError):
+        UserCreate(**user_create_data)

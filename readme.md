@@ -8,6 +8,9 @@
 <h1>Image on DockerHub</h1>
 <img src="./dockerhub-img.PNG" alt="dockerhub img" />
 
+<h1>Image on Coverage</h1>
+<img src='./coverage-img.PNG' alt="coverage img" />
+
 <h1>Reflection</h1>
 <p>This assignement did a solid job in being thrown into a larger developed project, similar to what would be in industry. Having 
 to navigate through the program and identify what each piece plays in a larger puzzle was a testiment to my understanding. With every file 

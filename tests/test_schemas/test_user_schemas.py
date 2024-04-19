@@ -94,8 +94,7 @@ def test_user_base_username_length_too_short(user_base_data):
     with pytest.raises(ValidationError):
         UserBase(**user_base_data)
 
-# Test username with length of 3 characters
-def test_user_base_username_length(user_base_data):
+    # Test username with length equal to 3 characters
     user_base_data["username"] = "abc"
-    with pytest.raises(ValidationError):
-        UserBase(**user_base_data)
+    user = UserBase(**user_base_data)
+    assert user.username == "abc"

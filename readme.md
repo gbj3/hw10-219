@@ -21,5 +21,5 @@ used for, but rather, the next engineer will need to simply be able to understan
 This class is my first experiene with Docker and the containerization of things. I am used to simply working on my machine, and when it works, 
 I am done. The new element where my computer does not matter and I need it to work on the cloud introduces a new element of both frustration and 
 understanding. Seeing as this is the way the industry works, it's pivotal that I understand it, and I am appreciative of this class for being the 
-first step in that direction. Further, the testing involved in the assignment has expanded my knowledge in making sure it truly works before deployment.
+first step in that direction. Further, the testing involved in the assignment has expanded my knowledge in making sure it truly works before deployment.</p>>
 
